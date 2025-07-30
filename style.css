@@ -1,0 +1,148 @@
+/* Body & base styles */
+body {
+    background: linear-gradient(120deg, #241e37 0%, #3a4660 100%);
+    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+    color: #ececec;
+    min-height: 100vh;
+    margin: 0;
+}
+#gallery {
+    background: linear-gradient(135deg, #14002e 60%, #ffc93c 100%);
+  position: relative;
+  /* background: linear-gradient(135deg, #1e1e2f 0%, #3a3a5c 100%); */
+  padding-bottom: 100px; /* Space for SVG wave */
+  z-index: 0;
+}
+
+.shape-fill {
+  pointer-events: none; /* So it does not interfere with clicks */
+  user-select: none;
+}
+
+.art-card {
+  border-radius: 1rem;
+  border: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.art-card:hover {
+  transform: translateY(-7px) scale(1.03);
+  box-shadow: 0 2rem 3rem -0.5rem #ffc93c77;
+}
+
+.img-hover {
+  border-radius: 1rem 1rem 0 0;
+  transition: filter 0.4s, transform 0.4s;
+}
+
+.art-card:hover .img-hover {
+  filter: brightness(1.03) saturate(1.2);
+  transform: scale(1.07);
+}
+
+.btn-outline-warning.glow-btn {
+  box-shadow: 0 0 10px 2px #ffc93c99;
+  transition: box-shadow 0.25s;
+}
+
+.btn-outline-warning.glow-btn:hover {
+  box-shadow: 0 0 25px 7px #ffc93cff;
+  transform: scale(1.05);
+}
+
+/* Navbar Glass Effect */
+.glass-navbar {
+    background: rgba(36, 30, 55, 0.83) !important;
+    backdrop-filter: blur(8px);
+    border-radius: 1.4rem;
+    box-shadow: 0 6px 24px -8px #14002e55;
+}
+
+/* Hero Section spacing */
+.hero-section {
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-top: 60px; /* ensure separation from navbar */
+}
+
+/* Gradient text style */
+.text-gradient {
+    background: -webkit-linear-gradient(45deg, #ffbe0b, #8338ec);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Card Styles */
+.art-card {
+  
+    border: none;
+    border-radius: 1rem;
+    transition: transform .2s, box-shadow .2s;
+}
+
+.art-card:hover {
+    transform: translateY(-7px) scale(1.04);
+    box-shadow: 0 2rem 3rem -0.5rem #ffc93c67;
+}
+
+.img-hover {
+    border-radius: 1rem 1rem 0 0;
+    transition: filter .4s, transform .4s;
+}
+
+.art-card:hover .img-hover {
+    filter: brightness(1.09) saturate(1.13);
+    transform: scale(1.07);
+}
+
+/* Button glow effect */
+.glow-btn {
+    box-shadow: 0 0 12px 2px #ffc93c99;
+    transition: box-shadow .25s, transform .1s;
+}
+
+.glow-btn:hover,
+.btn-warning:hover {
+    box-shadow: 0 0 33px 8px #ffc93cff;
+    transform: scale(1.07);
+}
+
+/* Signup Modal customization */
+.glass-modal {
+    background: linear-gradient(135deg, #18191aEE 0%, #ffc93c55 100%);
+    color: #fff;
+    border-radius: 1.2rem;
+    box-shadow: 0 1rem 2rem -0.5rem #ffc93c88;
+    border: none;
+}
+
+.modal-content label {
+    color: #ffc93c;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+    background: #222;
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ffc93caa;
+    border-radius: 10px;
+}
+
+/* Footer styling */
+footer {
+    letter-spacing: 0.04em;
+    box-shadow: 0 -2px 25px 0 #14002e55;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Responsive adjustments */
+
+@media (max-width: 991px) {
+    .dropdown-menu.p-3 {
+        min-width: 220px !important;
+    }
+}
